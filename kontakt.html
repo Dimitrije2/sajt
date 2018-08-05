@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="osnovna.css">
+    <link rel="stylesheet" href="kontakt.css">
+    <title> Cleveland Cavaliers </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/38e9e662a3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="slike/logo.png">
+        <a href="#" class='bars'><i class="fa fa-bars"></i></a>
+        <ul class="menuu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="o nama.html">about</a></li>
+            <li><a href="igraci.html">players</a></li>
+            <li><a href="news.html">news</a></li>
+            <li><a href="kontakt.html" class="active">contact</a></li>
+        </ul>
+    </header>
+
+    <div class="kontakt">
+
+        <BR>
+        <BR>
+        <form action="https://formspree.io/dimitrije.koledin.95@gmail.com" method="POST">
+            Name : <br>
+            <input type="text" name="name"> <br><br>
+            <BR> E-mail: <br>
+            <input type="email" name="_replyto"> <br><br> Leave your comment : <br><br>
+            <textarea col="12" rows="12" name="poruka"></textarea> <br><br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    <p id="informacije">
+    </p>
+    <div id="map"></div>
+
+    <footer>
+        <p> Copyright© 2017 by Dimitrije Koledin </p>
+    </footer>
+    <script src='osnovna.js'></script>
+    <script src='kontakt.js'></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9ZFOIe4HUZgm1E6muTYD3KjdCenAmJtM&callback=initMap">
+    </script>
+</body>
+
+</html>
